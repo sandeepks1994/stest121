@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <!-- Website Menu -->
+        <record id="blogs_page_menu" model="website.menu">
+            <field name="name">Blogs</field>
+            <field name="url">/my_blog/blogs/page</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+        <template id="blogs_page_template">
+            <t t-call="website.layout">
+                <div class="container">
+                    <h2>All Blogs</h2>
+                    <div class="blog-list">
+                        <t t-foreach="blogs" t-as="blog">
+                            <div class="blog-item">
+                                <div class="blog-image-container">
+                                    <img t-attf-src="data:image/png;base64, #{blog.image}" alt="Blog Image" class="blog-image" />
+                                </div>
+                                <div class="blog-details">
+                                    <h3><t t-esc="blog.name"/></h3>
+                                    <p><b>Author:</b> <t t-esc="blog.author"/></p>
+                                    <p><b>Publish Date:</b> <t t-esc="blog.publish_date"/></p>
+                                    <p><b>Description:</b> <t t-esc="blog.description"/></p>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

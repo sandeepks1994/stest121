@@ -1,0 +1,160 @@
+<odoo>
+	<data>
+        <record id="my_website_page_menu" model="website.menu">
+			<field name="name">Twyllo</field>
+			<field name="url">/my_website/welcome</field>
+			<field name="parent_id" ref="website.main_menu"/>
+			<field name="sequence" type="int">11</field>
+		</record>
+
+
+		<template id="my_website_home_page_template">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+			<link rel="stylesheet" type="text/css" href="/blog/static/src/css/my_website.css"/>
+			<body>
+				<div id="corpo">
+                    <header class="header-top">
+                        <div class="profile-photo pulse"></div>
+                    </header>
+                    <!-- *********************************************Nav bar************************************************* -->
+                    <nav class="menu-bar f-nav">
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <li><a href="#corpo">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#article-03">My Expertise</a></li>
+                                <li><a href="#article-03">Experience</a></li>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#project">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#">Registration</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Logout</a></li> 
+                            </ul>
+                        </div>
+                    </nav>
+                
+                    <!-- ******************************************Title and Subtitle***************************************** -->
+                    <article class="jumbotrom" id="main">
+                        <div class="content">
+                            <center>
+                                <h2 class="home_h2">AZMAR RAHMAN</h2>
+                                <h3 class="home_h3">Odoo Developer</h3>
+                                <p id="phrase">"Life can only be understood by looking back, but can only be lived by looking forward"
+                                <br/> - Soren Kierkegaard</p>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- ***************************************About me******************************************************* -->
+                    <section id="about">
+                        <div class="title" >
+                            <span>Description</span>
+                            <span>Ethical Hacker and<a target="_blanck" href="#about">Odoo Developer</a>
+                                <h3 class="about_me_h3"><br/>Hello, my name is Azmar Rahman. I am proficient in HTML, CSS, JavaScript, Python, Odoo, and Bootstrap.</h3>
+                            </span>
+                        </div>
+                    </section>
+                    <!-- *****************************************Education**************************************************** -->
+                    <div class="page" id="education" style="background-color: #f4f4f4;">
+                        <h2>Education</h2>
+                        <div class="education-container">
+                            <div class="education">
+                                <i class="fa fa-cog fa-spin"></i>
+                                <h3>Engineering courses</h3>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+                
+                            <div class="education">
+                                <i class="fa fa-file-code-o"></i>
+                                <h3>MOOCs</h3>
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Quantum Mechanics for Scientists and Engineers</li>
+                                </ul>
+                            </div>
+                
+                            <div class="education">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <h3>Odoo Development v14</h3>
+                                <ul>
+                                    <li>Xml</li>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************************************Project******************************************************* -->
+                    <article id="project" class="project11">
+                        <div class="pro">
+                            <p class="projec_ptag">Projects</p>
+                            <div class="image-grid">
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                                <img class="project_img" src="/blog/static/description/Odoo1.jpg"/>
+                            </div>
+                        </div>
+                    </article>		
+		        </div>
+                <!-- ******************************************Contact******************************************************* -->
+                <section class="contact-page-section" id="contact">
+                    <div class="container">
+                        <div class="contactsec-title">
+                            <div class="contacttitle">Contact Me</div>
+                            <h2>Let's Get in Touch.</h2>
+                        </div>
+                        <div class="inner-container">
+                            <div class="form-column">
+                                <div class="contact-form">
+                                    <form method="post" action="sendemail.php" id="contact-form">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Name"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" placeholder="Email"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="subject" placeholder="Subject"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" placeholder="Phone"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="theme-btn">Send Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="info-column">
+                                <h2>Contact Info</h2>
+                                <ul class="list-info">
+                                    <li><i class="fas fa-globe"></i>Pragmatic Techsoft, Panampilly Nagar, Kochi.</li>
+                                    <li><i class="far fa-envelope"></i>azmar@gmail.com</li>
+                                    <li><i class="fas fa-phone"></i>9815672065<br/>6712546708</li>
+                                </ul>
+                                <ul class="social-icon-four">
+                                    <li class="follow">Follow on:</li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</body>
+		</template>
+	</data>
+</odoo>

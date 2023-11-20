@@ -1,0 +1,16 @@
+<odoo>
+	<data>
+		<menuitem id="my_blog_menu_root"
+                        name="My Blog"
+                        sequence="1"/>
+
+		<menuitem id="blog_menu"
+                        name="Blog"
+						action="blog_action"
+						parent="my_blog_menu_root"
+                        sequence="1"/>
+	</data>
+</odoo>
+
+
+

@@ -1,0 +1,9 @@
+./odoo-bin --addons-path="addons,company" -u company_db_1 -u employee
+
+
+
+
+
+
+
+

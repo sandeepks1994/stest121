@@ -1,0 +1,14 @@
+<odoo>
+    <template id="assets_backend_custom_web" inherit_id="web.assets_backend" name="custom web backend Assets">
+        <xpath expr="." position="inside">
+            <!-- <script type="text/javascript" src="/blog/static/src/js/hide_fields.js"></script> -->
+        </xpath>
+    </template>
+
+    <template id="assets_frontend_custom_web" inherit_id="web.assets_frontend" name="custom web frontend Assets">
+        <xpath expr="script[last()]" position="after">
+			<link rel="stylesheet" type="text/css" href="/blog/static/src/css/blog.css"/>
+			<!-- <link rel="stylesheet" type="text/css" href="/blog/static/src/css/my_website.css"/> -->
+        </xpath>
+    </template>
+</odoo>

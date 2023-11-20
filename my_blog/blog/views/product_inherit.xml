@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="view_product_form_inherit" model="ir.ui.view">
+            <field name="name">product.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <!-- <field name="list_price" position="attributes">
+                    <attribute attrs="{'invisible':[('hide_price','=','true')]}"></attribute>
+                </field> -->
+
+                <field name="barcode" position="after">
+                    <field name="hide_price"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
